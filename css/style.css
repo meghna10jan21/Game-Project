@@ -18,11 +18,28 @@
         font-family: 'Times New Roman', Times, serif;
         font-size:2em;
     }
+    .result, .timetaken{
+        text-align: left;
+        display: flex;
+    }
     .cards{
-        border: 10px solid;
-        height: 100px;
-        width: 100px;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-gap: 3em;
+        transform-style: preserve-3d;
+        transition: transform 0.5s;
+    
+    }
+    .innercard{
+        height: 50px;
+        width: 50px;
+        border-radius: 10px;
+        cursor: pointer;
     }
 
-   
+
+    .cards:hover .innercard{
+        transform: rotateY(180deg);
+        
+    }
     
