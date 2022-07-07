@@ -16,7 +16,9 @@ const cardsList = [
 ]
     let result = 0;
     let cardsclick = 0;
-    let 
+    let Firstcardselection = [];
+    let secondcardselection = [];
+    
    const cards= document.querySelectorAll(".innercards")
 for (let i=0; i<cardsList.length; i++){
     let card = cards[i]
