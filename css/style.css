@@ -11,15 +11,13 @@
     }
    
     nav{
-        padding: 1.5em;
-        height: 2.7em;
         display: grid;
         justify-content: center;
         font-family: 'Times New Roman', Times, serif;
         font-size:2em;
     }
-    .result, .timetaken{
-        text-align: left;
+    .result{
+        text-align: center;
         display: flex;
     }
     .cards{
