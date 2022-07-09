@@ -7,27 +7,30 @@ for (let i=0; i<cardsList.length; i++){
     card.append(frontcards)
 }
 
-}    
+}  
 
-function flip(){
-    
-}
-
-let firstcard='';
-let secondcard='';
+ let firstcard;
+ let secondcard;
 
 function Matchcards(){
     const cards = document.querySelectorAll('img')
     let img = setAttribute('src', './assets/underwater.jpeg');
     if(firstcard[0] === secondcard[0]){
         alert('matched');
-        removeEventListener.firstcard && secondcard;
+       firstcard.removeEventListener("click", flip);
+       secondcard.removeEventListener("click", flip);
     }
        else (firstcard[0] !== secondcard[0]);{
         alert('NOT A MATCH');
         cards(flipback); 
        }
     }
+
+    function flip(){
+        const selectedcard = document.getElementsByClassName('value')
+        cardsClicked.push([i])
+            
+        }
     
 
 function Shufflecards(){

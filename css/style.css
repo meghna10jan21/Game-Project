@@ -36,9 +36,7 @@
     .backcard,  img{
         max-width: 100%;
     }
-    .backcard, .frontcard{
-        backface-visibility: hidden;
-    }
+   
     .cards.flip{
         transform: rotateY(180deg);
     }
