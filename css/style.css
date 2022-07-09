@@ -32,6 +32,15 @@
         justify-content: center;
         transition: transform .5s;
     }
+    .frontcard, .backcard{
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+    }
+    
+    button {
+        cursor: pointer;
+    }
 
     .backcard,  img{
         max-width: 100%;

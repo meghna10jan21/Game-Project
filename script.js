@@ -26,15 +26,23 @@ function Matchcards(){
        }
     }
 
-    function flip(){
+function flip(){
         const selectedcard = document.getElementsByClassName('value')
-        cardsClicked.push([i])
-            
+        cardsClicked.push([i])   
         }
-    
 
-function Shufflecards(){
-   cardsList.sort(() => random()) 
+function Endgame(){
+    const endgame = document.addEventListener("click", score);
+    alert('YOU WON');
+    return(Shufflecards);
+
 }
 
-
+function playagain(){
+    const button = document.createElement("button");
+    button.innerhtml = "Playagain";
+    document.body.appendChild(button); 
+}
+function Shufflecards(){
+    cardsList.sort(() => random()) 
+ }
