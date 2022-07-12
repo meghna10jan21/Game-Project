@@ -3,60 +3,58 @@
     padding: 0;
     box-sizing:border-box;
     }
-    body{
-        background-color: antiquewhite;
-        height: 100vh;
-        display: grid;
-        place-items: center;
-    }
-    .board {
-        display: grid;
-        place-items: center;
-        height: 600px;
-        width: 600px;
-        background-color: rgb(86, 92, 99);
-        justify-content: center;
-        border-radius: 10px;
-    }
-   
-    .cards{
-        display: grid;
-        height: 80px;
-        width: 80px;
-        border-radius: 10px;
-        grid-template-columns: repeat(4, auto);
-        grid-gap: 3em;
-        transform-style: preserve-3d;
-        cursor: pointer;
-        justify-items: center;
-        justify-content: center;
-        transition: transform .5s;
-    }
-    .frontcard, .backcard{
-        width: 100%;
-        height: 100%;
-        backface-visibility: hidden;
-    }
-    
-    button {
-        cursor: pointer;
+
+body{
+    background-color: antiquewhite;
+    height: 100vh;
+    display: grid;
+    place-items: center;
     }
 
-    .backcard,  img{
-        max-width: 100%;
-    }
-   
-    .cards.flip{
-        transform: rotateY(180deg);
-    }
-    .cards.clicked{
-        transform: rotateY(180deg);
-        transition: .3s;
+.board {
+    display: grid;
+    place-items: center;
+    height: 500px;
+    width: 500px;
+    background-color: rgb(86, 92, 99);
+    justify-content: center;
+    border-radius: 10px;
+    position: relative;
     }
 
-    .cards:hover .frontcard{
-        transform: rotateY(180deg);
-    }
-    .cards:hover .backcard{
-        transform: rotateY(0deg);
-    }
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-gap: 1em;
+    justify-content: center;
+    min-height: 60px;
+    min-width: 60px;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    transition: transform .5s;
+    position: relative;
+}
+
+img{
+    height: 100px;
+    width: 100px;
+    transition: 0.5s all ease;
+    opacity: 0;
+}
+
+.innerCard{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5 all ease ;
+}
+
+.cards:hover .innercard{
+    transform: rotateY(180deg);
+}
+
+.innercard{
+    transform: rotateY(180deg);
+}
