@@ -1,31 +1,39 @@
 
     const cards=document.querySelectorAll("innerCard");
 
-    function flip(){
-        this.classlist.cards.add('flip');
-        //let img = setAttribute('src', './assets/underwater.jpeg');
-    }
-    cards.forEach(card=> card.addEventListener('click', flip));
-
-    let cardOne='';
-    let cardTwo=''; 
-
-    function gameStart(){
-        const cards = document.querySelectorAll('#value')
-        if(cardOne[0] === cardTwo[0]){
+    function flip(card){
+        const image = card.querySelector('img').style.opacity = 1;
+       image.style.opacity = 1;
+       if (!cardOne){
+           cardOne= image;
+           
+       }
+       else {
+           cardTwo = image;
+           if(cardOne.src === cardTwo.src){
             alert('matched');
            cardOne.removeEventListener("click", flip);
            cardTwo.removeEventListener("click", flip);
         }
-           else if(cardOne[0] !== cardTwo[0]);{
+           else if(cardOne.src !== cardTwo.src){
             alert('NOT A MATCH');
-            cards(flipback); 
-           }
-           return(value++)
-}
+        }
+        }
+
+        //let img = setAttribute('src', './assets/underwater.jpeg');
+    }
+    //cards.forEach(card=> card.addEventListener('click', flip));
+
+    let cardOne=null;
+    let cardTwo=null; 
+
+    function gameStart(){
+        const cards = document.querySelectorAll('.innerCard')
+        cards.forEach(card=> card.addEventListener('click', ()=>flip(card)));
+    }
     function endGame(){
     const endGame = document.getElementsByClassName("click", value);
-    if(cardOne && cardTwo === 'null'); 
+    if(cardOne && cardTwo === "null"); 
     alert('YOU WON');
     return(shuffleCards);
 }

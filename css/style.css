@@ -54,6 +54,9 @@ img{
 .cards:hover .innercard{
     transform: rotateY(180deg);
 }
+.button{
+    cursor: pointer;
+}
 
 .innercard{
     transform: rotateY(180deg);
