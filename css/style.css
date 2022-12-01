@@ -1,63 +1,66 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing:border-box;
-    }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-body{
-    background-color: antiquewhite;
-    height: 100vh;
-    display: grid;
-    place-items: center;
-    }
+body {
+  background-color: antiquewhite;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
 
 .board {
-    display: grid;
-    place-items: center;
-    height: 500px;
-    width: 500px;
-    background-color: rgb(86, 92, 99);
-    justify-content: center;
-    border-radius: 10px;
-    position: relative;
-    }
-
-.cards{
-    display: grid;
-    grid-template-columns: repeat(3,auto);
-    grid-gap: 1em;
-    justify-content: center;
-    min-height: 60px;
-    min-width: 60px;
-    transform-style: preserve-3d;
-    cursor: pointer;
-    transition: transform .5s;
-    position: relative;
+  display: grid;
+  place-items: center;
+  height: 500px;
+  width: 500px;
+  background-color: rgb(86, 92, 99);
+  justify-content: center;
+  border-radius: 10px;
+  position: relative;
 }
 
-img{
-    height: 100px;
-    width: 100px;
-    transition: 0.5s all ease;
-    opacity: 0;
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 1em;
+  justify-content: center;
+  min-height: 60px;
+  min-width: 60px;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  transition: transform 0.5s;
+  position: relative;
 }
 
-.innerCard{
-    height: 100px;
-    width: 100px;
-    background-color: aqua;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.5 all ease ;
+img {
+  height: 100px;
+  width: 100px;
+  transition: 0.5s all ease;
+  opacity: 0;
 }
 
-.cards:hover .innercard{
-    transform: rotateY(180deg);
-}
-.button{
-    cursor: pointer;
+.innerCard {
+  height: 100px;
+  width: 100px;
+  background-color: aqua;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5 all ease;
 }
 
-.innercard{
-    transform: rotateY(180deg);
+.cards:hover .innercard {
+  transform: rotateY(180deg);
 }
+
+.button {
+  cursor: pointer;
+}
+
+.innercard {
+  transform: rotateY(180deg);
+}
+
+/*# sourceMappingURL=style.css.map */

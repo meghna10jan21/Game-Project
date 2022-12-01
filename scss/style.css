@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: antiquewhite;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.board {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: 500px;
+  width: 500px;
+  background-color: #565c63;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  position: relative;
+}
+
+.cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+  grid-gap: 1em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 60px;
+  min-width: 60px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+  position: relative;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  opacity: 0;
+}
+
+.innerCard {
+  height: 100px;
+  width: 100px;
+  background-color: aqua;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.5 all ease;
+  transition: 0.5 all ease;
+}
+
+.cards:hover .innercard {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.button {
+  cursor: pointer;
+}
+
+.innercard {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+/*# sourceMappingURL=style.css.map */

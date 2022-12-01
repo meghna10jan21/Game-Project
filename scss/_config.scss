@@ -1,0 +1,14 @@
+@import "_btnConfig";
+@import "_utilities";
+
+$light-color:antiquewhite;
+$primary-color:rgb(86, 92, 99);
+$secondary-color: aqua;
+$height:100px;
+$width:100px;
+
+.element{
+@debug $light-color;
+@debug $primary-color;
+@debug $secondary-color;
+}

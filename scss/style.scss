@@ -1,0 +1,71 @@
+@import "_btnConfig";
+@import "_utilities";
+@import "config";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    }
+
+body{
+    background-color: $light-color;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    }
+
+.board {
+    display: grid;
+    place-items: center;
+    height: 500px;
+    width: 500px;
+    background-color: $primary-color;
+    justify-content: center;
+    border-radius: 10px;
+    position: relative;
+    
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-gap: 1em;
+    justify-content: center;
+    min-height: 60px;
+    min-width: 60px;
+    cursor: pointer;
+    transition: transform .5s;
+    position: relative;
+    @include transform-style;
+}
+}
+
+img{
+    height: $height;
+    width: $width;
+    transition: 0.5s all ease;
+    opacity: 0;
+
+
+.innerCard{
+    height: $height;
+    width: $width;
+    background-color: $secondary-color;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5 all ease ;
+}
+
+.cards{
+    & :hover .innercard{
+    transform: rotateY(180deg);
+}
+.button{
+    cursor: pointer;
+}
+
+.innercard{
+    transform: rotateY(180deg);
+}
+}
+}
